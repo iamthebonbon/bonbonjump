@@ -1,0 +1,46 @@
+# general folders
+.idea/
+.git/
+.vscode/
+.utmp/
+
+# general files 
+encodings.xml
+indexLayout.xml
+vcs.xml
+
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+
+# User-specific
+UserSettings/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.blob
+
+# Builds
+AndroidBuild/
+IosBuild/
+
+# OS generated  
+.DS_Store
+Thumbs.db
+
+# Unity crash reports
+mono*
