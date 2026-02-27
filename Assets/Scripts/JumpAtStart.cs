@@ -36,11 +36,18 @@ public class JumpAtStart : MonoBehaviour
                 continue;
             }
 
-            if (touch.phase == UnityEngine.InputSystem.TouchPhase.Ended && runtimeJumpCounter>0)
+            if (touch.phase == UnityEngine.InputSystem.TouchPhase.Ended && runtimeJumpCounter > 0)
             {
                 runtimeJumpCounter--;
-                animator.SetTrigger("Jump");
-                pRigidbody.AddForce(Vector3.up * 2, ForceMode.Impulse);
+                if (Random.value > 0.5f)
+                {
+                    animator.SetTrigger("Jump");
+                }
+                else
+                {
+                    animator.SetTrigger("WeirdJump");
+                }
+                pRigidbody.AddForce(Vector3.up * 5, ForceMode.Impulse);
             }
         }
     }
