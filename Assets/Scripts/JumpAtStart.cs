@@ -39,9 +39,13 @@ public class JumpAtStart : MonoBehaviour
             if (touch.phase == UnityEngine.InputSystem.TouchPhase.Ended && runtimeJumpCounter > 0)
             {
                 runtimeJumpCounter--;
-                if (Random.value > 0.5f)
+                if (Random.value > 0.7f)
                 {
                     animator.SetTrigger("Jump");
+                }
+                else if (Random.value > 0.3f)
+                {
+                    animator.SetTrigger("ObstacleJump");
                 }
                 else
                 {
