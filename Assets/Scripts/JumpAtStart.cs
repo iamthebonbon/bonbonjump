@@ -47,7 +47,7 @@ public class JumpAtStart : MonoBehaviour
                 {
                     animator.SetTrigger("WeirdJump");
                 }
-                pRigidbody.AddForce(Vector3.up * 5, ForceMode.Impulse);
+                pRigidbody.AddForce(Vector3.up * 7.5f, ForceMode.Impulse);
             }
         }
     }
